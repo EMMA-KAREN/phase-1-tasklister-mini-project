@@ -28,7 +28,7 @@ h2 {
   width: 100%;
   height: max-content;
  max-height: 90%;
-  max-width: 60%; /* Sets a max width for the form */
+  max-width: 60%; 
   background-color: #a05f5f;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -88,19 +88,42 @@ footer {
 }
 
 .search-container {
-  display: flex; /* Use flexbox to align items in a row */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  margin-bottom: 20px; /* Spacing below the search container */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 20px; 
 }
 
 .search-container .form-control {
-  border-radius: 5px 0 0 5px; /* Rounded left corners */
-  border-right: none; /* Remove right border for seamless connection with button */
-  width: 40%; /* Set a fixed width or adjust as needed */
+  border-radius: 5px 0 0 5px;
+  border-right: none; 
+  width: 40%; 
 }
 
 .search-container .btn {
-  border-radius: 0 5px 5px 0; /* Rounded right corners */
-  border-left: none; /* Remove left border for seamless connection with input */
+  border-radius: 0 5px 5px 0; 
+  border-left: none;
+}
+.patient-item {
+  /* Common styles for all patient items */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.priority-high {
+  color: red; /* High priority */
+}
+
+.priority-medium {
+  color: yellow; /* Medium priority */
+}
+
+.priority-low {
+  color: green; /* Low priority */
+}
+
+.priority-default {
+  color: black; /* Default color */
 }
