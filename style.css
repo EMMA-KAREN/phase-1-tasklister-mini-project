@@ -1,37 +1,106 @@
-html {
-  height: 100%;
-  width: 100%;
-  font-family: "Titillium Web", sans-serif;
-}
-
 body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
+  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #7e5c76;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
 }
 
-button {
-  font-size: 7px;
+h1 {
+  color: #070808;
+  margin-bottom: 20px;
+;
 }
 
-#main-content {
-  position: relative;
+h2 {
+  color: #040c14;
+  
+}
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  flex-direction: column; 
+
+}  
+.form-container {
+  width: 100%;
+  height: max-content;
+ max-height: 90%;
+  max-width: 60%; /* Sets a max width for the form */
+  background-color: #a05f5f;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-#list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #a8bea6;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c8d3cc;
+}
+
+#patientList {
+  margin-top: 20px;
+  border-top: 2px solid #007bff;
+  padding-top: 10px;
+}
+
+.patient-item {
+  border: 1px solid #9e2323;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #444d44;
+}
+
+
+
+.edit-button {
+  background-color: #ffcc00;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  margin-top: 20px;
+  color: #c9d6e0;
+}
+
+.search-container {
+  display: flex; /* Use flexbox to align items in a row */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  margin-bottom: 20px; /* Spacing below the search container */
+}
+
+.search-container .form-control {
+  border-radius: 5px 0 0 5px; /* Rounded left corners */
+  border-right: none; /* Remove right border for seamless connection with button */
+  width: 40%; /* Set a fixed width or adjust as needed */
+}
+
+.search-container .btn {
+  border-radius: 0 5px 5px 0; /* Rounded right corners */
+  border-left: none; /* Remove left border for seamless connection with input */
 }

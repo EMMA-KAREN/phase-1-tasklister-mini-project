@@ -1,28 +1,88 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Flatiron Task Lister</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="rehab, patient tracking, healthcare, recovery">
+    <meta name="author" content="EMMACULATE MWIKALI"> 
+    <title>Rehab Patient Tracking </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="main-content">
-    <h1>Task Lister Lite™️</h1>
+  
+    <h1 class="text-center">Rehab Patient Tracking</h1>
+    <div class="search-container">
+    <img src="./images/rehab.jpg" alt="Image of the rehab" class="img-fluid mx-auto d-block">
 
-    <form id="create-task-form" action="" method="POST">
-      <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
-    </form>
-
-    <div id="list">
-      <h2>My Todos:</h2>
-      <ul id="tasks">
-      </ul>
+    
+        <input type="text" id="searchInput" placeholder="Search patient by name" class="form-control w-50 d-inline-block">
+        <button id="searchButton" class="btn btn-primary">Search</button>
     </div>
 
-    <script src="./src/index.js"></script>
-  </div>
+    <main class="container">
+        <div class="form-container">
+            <h2>Patient Information</h2>
+            <form id="patientForm">
+                <div class="form-group">
+                    <label for="patientName">Patient Name:</label>
+                    <input type="text" id="patientName" class="form-control" required>
+                </div>
 
+                <div class="form-group">
+                    <label for="guardianName">Guardian Name:</label>
+                    <input type="text" id="guardianName" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="stage">Stage:</label>
+                    <select id="stage" class="form-control" required>
+                        <option value="">Select Stage</option>
+                        <option value="1">Stage 1</option>
+                        <option value="2">Stage 2</option>
+                        <option value="3">Stage 3</option>
+                        <option value="4">Stage 4</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="progress">Progress:</label>
+                    <textarea id="progress" class="form-control" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="guardianPhone">Guardian Phone:</label>
+                    <input type="tel" id="guardianPhone" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctorEmail">Doctor Email:</label>
+                    <input type="email" id="doctorEmail" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Priority:</label>
+                    <select id="priority" class="form-control" required>
+                        <option value="">Select Priority</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+       
+        
+        <div id="patientList" class="mt-4"></div>
+    </main>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2023 Rehab Tracking System</p>
+        <p>Contact: rehab@helpafriend.com</p>
+    </footer>
+
+    <script src="./src/index.js"></script>
 </body>
 </html>
